@@ -4,16 +4,18 @@ import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "Reservation")
 public class Reservation implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idReservation")
     private String idReservation;
     private Boolean estValide;
     @Temporal(TemporalType.DATE)
     private Date anneeUniversitaire;
 
+    @ManyToMany(mappedBy = "reservations")
+    private Set<Etudiant> etudiants;
 }

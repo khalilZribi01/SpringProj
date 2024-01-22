@@ -1,2 +1,4 @@
-package tn.esprit.tic.springproj.repository;public interface ChambreRepository {
+package tn.esprit.tic.springproj.repository;
+
+public interface ChambreRepository {
 }

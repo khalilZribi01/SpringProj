@@ -1,2 +1,4 @@
-package tn.esprit.tic.springproj.services;public interface IFoyerService {
+package tn.esprit.tic.springproj.services;
+
+public interface IFoyerService {
 }
